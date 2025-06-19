@@ -101,7 +101,7 @@ h1 {
         margin-top: 10px;
     }
 
-    @media (max-width: 700px) {
+    /* @media (max-width: 700px) {
     body {
         max-width: 100%;
         margin: 10px;
@@ -128,4 +128,37 @@ h1 {
     .quiz h2 {
         font-size: 1rem;
     }
+} */
+
+/* --- Responsive Design amélioré --- */
+@media (max-width: 600px) {
+    #formulaire {
+        max-width: 98%;
+        padding: 8px;
+        margin: 20px auto;
+    }
+    #formulaire input {
+        width: 100%;
+        font-size: 1em;
+    }
+    h1, .app h1 {
+        font-size: 1em;
+    }
+    #texte {
+        font-size: 0.95em;
+        margin: 10px;
+    }
+    #boutton {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+/* Utilisation de Flexbox pour centrer le contenu principal */
+.Tout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
