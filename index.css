@@ -1,0 +1,131 @@
+body {
+    background-color: #4a90e2;
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#texte {
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-size: large;
+}
+
+
+#formulaire {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f8ff;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 400px;
+        margin: 70px auto;
+
+    }
+
+    #formulaire form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #formulaire label {
+        font-weight: bold;
+        color: #2a4e6c;
+        margin-bottom: 5px;
+    }
+
+    #formulaire input[type="text"],
+    #formulaire input[type="email"],
+    #formulaire input[type="number"] {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid #a8c6e0;
+        border-radius: 5px;
+        background-color: #ffffff;
+        font-size: 14px;
+    }
+
+    #formulaire input[type="text"]
+    #formulaire input[type="email"]
+    #formulaire input[type="number"] {
+        border-color: #4a90e2;
+
+    }
+
+    #formulaire input[type="email"]::placeholder {
+        color: #7f8c8d;
+        opacity: 0.7;
+    }
+
+    #formulaire input[type="text"]::placeholder {
+        color: #7f8c8d;
+        opacity: 0.7;
+    }
+
+     #formulaire input[type="number"]::placeholder {
+        color: #7f8c8d;
+        opacity: 0.7;
+    }
+
+    #boutton {
+        padding: 10px 25px;
+        background-color: #3498db; 
+        color: white;
+        border: 2px solid #2980b9; 
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    
+    #formulaire {
+        text-align: center; /* Centre le texte et les éléments inline/inline-block */
+    }
+    
+    #formulaire label {
+        display: block; /* Les labels prennent toute la largeur */
+        margin-bottom: 5px;
+    
+    }
+    
+    #formulaire input {
+        width: 250px; /* Largeur fixe pour un alignement propre */
+        margin-bottom: 15px;
+    }
+    
+    #boutton {
+        margin-top: 10px;
+    }
+
+    @media (max-width: 700px) {
+    body {
+        max-width: 100%;
+        margin: 10px;
+        padding: 0 5px;
+        background-size: cover;
+    }
+    .Tout{
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 5px;
+    }
+    .quiz {
+        margin: 10px 0;
+        padding: 5px;
+    }
+    .btn, #next-btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+    h1, .app h1 {
+        font-size: 1.2rem;
+    }
+    .quiz h2 {
+        font-size: 1rem;
+    }
+}

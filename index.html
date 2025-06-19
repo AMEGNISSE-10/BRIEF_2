@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGGBAATEST-Pro</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="Tout">
+        <h1>Quiz Jeunes Talents du Numérique</h1>
+        <section id="section1">
+            
+            <form id="formulaire">
+
+                <label id="Name" for="name">NOM</label><br>
+                <input type="text" id="Name" name="nom" placeholder="Saisissez votre NOM"><br>
+
+                <label id="EmailInput" for="email">Email</label> <br>
+                <input type="email" placeholder="Saisissez votre Email" name="email" id="EmailInput"><br>
+                <label id="AgeInput" for="age">Âge</label> <br>
+                <input type="number" id="AgeInput" name="age" placeholder="Saisissez votre âge" min="15" max="25"><br>
+
+                <button type="submit" id="boutton">Commencer le test</button>
+
+            </form>
+         
+        </section>
+         <p id="texte">Candidats de 15 à 25 ans ; Phase de présélection</p>
+
+         
+        <section id="sectionQuestion" style="display: none;">
+           
+         <div id="Quiz">
+            <h3 id="Question" style="color: white; text-align: center;"></h3>
+            <div id="Propositions" style="display: flex; flex-direction: column; padding: 0px 400px 0px 400px;" ></div>
+         </div>
+         <h4 id="feedback"></h4>
+            <button id="Suivant" style="display: flex; text-align: center; margin: 20px auto;">Question Suivante</button>
+
+        </section>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
