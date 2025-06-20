@@ -1,5 +1,5 @@
 body {
-    background-color: #4a90e2;
+    background: linear-gradient(to right, #214766, #c5defa);
 }
 
 
@@ -117,34 +117,6 @@ h1 {
         display: block !important;
     }
 
-    /* @media (max-width: 700px) {
-    body {
-        max-width: 100%;
-        margin: 10px;
-        padding: 0 5px;
-        background-size: cover;
-    }
-    .Tout{
-        width: 100%;
-        max-width: 100%;
-        margin: 10px auto;
-        padding: 5px;
-    }
-    .quiz {
-        margin: 10px 0;
-        padding: 5px;
-    }
-    .btn, #next-btn {
-        width: 100%;
-        font-size: 1rem;
-    }
-    h1, .app h1 {
-        font-size: 1.2rem;
-    }
-    .quiz h2 {
-        font-size: 1rem;
-    }
-} */
 
 /* --- Responsive Design amélioré --- */
 @media (max-width: 600px) {
@@ -184,4 +156,51 @@ h1 {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+
+/* Style pour les boutons de propositions du quiz */
+.proposition-btn {
+    background-color: #f0f8ff;
+    color: #2a4e6c;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+   
+    box-shadow: 0 2px 6px rgba(52, 152, 219, 0.08);
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+}
+.proposition-btn:hover, .proposition-btn:focus {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #2980b9;
+}
+
+/* Style pour le bouton recommencer du score final */
+#recommencer-btn {
+    background-color: #f0f8ff;
+    color: #2a4e6c;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 20px auto 0 auto;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(52, 152, 219, 0.08);
+    outline: none;
+    display: block;
+    max-width: 400px;
+   
+}
+#recommencer-btn:hover, #recommencer-btn:focus {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #2980b9;
 }

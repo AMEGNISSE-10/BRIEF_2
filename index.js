@@ -269,9 +269,9 @@ function afficherQuestion(index) {
 // Fonction pour afficher le score final
 function afficherScoreFinal() {
     sectionQuestion.innerHTML = `
-        <h2>Quiz terminé !</h2>
-        <p>Votre score final est : <strong>${scoreFinal} / ${questions.length}</strong></p>
-        <button onclick="window.location.reload()">Recommencer</button>
+        <h2 style="color:#2a4e6c; text-align:center;">Quiz terminé !</h2>
+        <p style="color:#2a4e6c; text-align:center; font-size:1.2em;">Votre score final est : <strong>${scoreFinal} / ${questions.length}</strong></p>
+        <button id="recommencer-btn" onclick="window.location.reload()">Recommencer</button>
     `;
 }
 

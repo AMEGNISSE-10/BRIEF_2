@@ -8,40 +8,50 @@
 </head>
 <body>
 
+    <!-- Conteneur principal du site -->
     <div class="Tout">
+        <!-- Titre principal du quiz -->
         <h1>Quiz Jeunes Talents du Numérique</h1>
+        
+        <!-- Section du formulaire d'inscription -->
         <section id="section1">
-            
             <form id="formulaire">
-
+                <!-- Champ pour le nom -->
                 <label id="Name" for="name">NOM</label><br>
                 <input type="text" id="Name" name="nom" placeholder="Saisissez votre NOM"><br>
 
+                <!-- Champ pour l'email -->
                 <label id="EmailInput" for="email">Email</label> <br>
                 <input type="email" placeholder="Saisissez votre Email" name="email" id="EmailInput"><br>
+
+                <!-- Champ pour l'âge -->
                 <label id="AgeInput" for="age">Âge</label> <br>
                 <input type="number" id="AgeInput" name="age" placeholder="Saisissez votre âge" min="15" max="25"><br>
 
+                <!-- Bouton pour valider le formulaire et commencer le test -->
                 <button type="submit" id="boutton">Commencer le test</button>
-
             </form>
-         
         </section>
-         <p id="texte">Candidats de 15 à 25 ans ; Phase de présélection</p>
+        
+        <!-- Message d'information sur les candidats -->
+        <p id="texte">Candidats de 15 à 25 ans ; Phase de présélection</p>
 
-         
+        <!-- Section du quiz, cachée au départ -->
         <section id="sectionQuestion" style="display: none;">
-           
-         <div id="Quiz">
-            <h3 id="Question" style="color: white; text-align: center;"></h3>
-            <div id="Propositions" style="display: flex; flex-direction: column; padding: 0px 400px 0px 400px;" ></div>
-         </div>
-         <h4 id="feedback" style="margin: 20px auto; text-align: center;"></h4>
+            <div id="Quiz">
+                <!-- Question affichée ici -->
+                <h3 id="Question" style="color: white; text-align: center;"></h3>
+                <!-- Propositions de réponses -->
+                <div id="Propositions" style="display: flex; flex-direction: column; padding: 0px 400px 0px 400px;"></div>
+            </div>
+            <!-- Feedback sur la réponse -->
+            <h4 id="feedback" style="margin: 20px auto; text-align: center;"></h4>
+            <!-- Bouton pour passer à la question suivante -->
             <button id="Suivant" style="display: flex; text-align: center; margin: 20px auto;">Question Suivante</button>
-
         </section>
     </div>
 
+<!-- Inclusion du script JavaScript principal -->
 <script src="index.js"></script>
 </body>
 </html>
