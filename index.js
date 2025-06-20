@@ -235,6 +235,7 @@ function afficherQuestion(index) {
     answered = false;
     feedbackElement.textContent = "";
     boutonSuivant.style.display = "none";
+    boutonSuivant.classList.remove("show");
     const questionObj = questions[index];
     // Récupérer la clé de la question (ex: "Question1")
     const questionKey = Object.keys(questionObj).find(key => key.startsWith("Question"));
@@ -258,7 +259,8 @@ function afficherQuestion(index) {
                 feedbackElement.textContent = "Mauvaise réponse !";
                 feedbackElement.style.color = "red";
             }
-            boutonSuivant.style.display = "inline-block";
+            boutonSuivant.style.display = "block";
+            boutonSuivant.classList.add("show");
         };
         propositionsElement.appendChild(btn);
     });
